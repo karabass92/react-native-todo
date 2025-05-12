@@ -1,20 +1,11 @@
 import { create } from "zustand";
 import "react-native-get-random-values";
 import { v4 as uuidv4 } from 'uuid';
-
-type TodoItem = {
-  id: string;
-  title: string;
-};
-
-type TodoList = {
-  id: string;
-  title: string;
-  items: TodoItem[];
-};
+import { TodoList } from "@/types";
 
 type TodosState = {
   todos: TodoList[];
+  currentList: string | null,
   addList: (title: string) => void;
   removeList: (id: string) => void;
   addItem: (listId: string, title: string) => void;
@@ -23,6 +14,7 @@ type TodosState = {
 
 export const useTodos = create<TodosState>((set) => ({
   todos: [],
+  currentList: null,
 
   addList: (title) => set((state) => ({ 
     todos: [...state.todos, { id: uuidv4(), title, items: [] }] 

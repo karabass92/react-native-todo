@@ -4,7 +4,7 @@ const ListScreen = () => {
   return (
     <View>
       <Text>
-        DETAILS
+        SOME TODO LIST DETAILS
       </Text>
     </View>
   );
