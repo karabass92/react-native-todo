@@ -7,8 +7,8 @@ import { style } from "@/constants";
 const ListLayout = () => {
   return (
     <View style={style.layoutNavigation}>
-      <Slot />
       <Navigation />
+      <Slot />
     </View>
   );
 };

@@ -23,8 +23,8 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: "#00bcff",
     padding: 12,
-    borderTopLeftRadius: 12,
-    borderTopEndRadius: 12,
+    borderBottomLeftRadius: 12,
+    borderBottomRightRadius: 12,
   },
   link: {
     flexGrow: 1,

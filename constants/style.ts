@@ -7,7 +7,6 @@ const color = {
 
 export const style = StyleSheet.create({
   layoutNavigation: {
-    paddingBlockStart: 48,
     flex: 1,
     flexDirection: "column",
     justifyContent: "space-between",
